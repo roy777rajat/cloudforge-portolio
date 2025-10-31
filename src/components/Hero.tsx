@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, Facebook } from "lucide-react";
+import { StatsCarousel } from "@/components/StatsCarousel";
 
 const roles = [
   "AWS Cloud Engineer",
@@ -65,8 +66,12 @@ export function Hero() {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Transforming Insurance Data with Cloud, AI, and Engineering Excellence
+              Associate Consultant (TCS/Diligenta, UK) specializing in AWS cloud migrations, data engineering, and insurance data transformation. Designs scalable ETL pipelines with AWS Glue + PySpark and builds S3-based data lakes that streamline workflows.
             </p>
+
+            <div className="text-base text-muted-foreground/80 max-w-2xl italic">
+              "I design data lakes, real-time pipelines, and AI-assisted workflows that modernize insurance operations—secure, scalable, and observable."
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
@@ -86,6 +91,11 @@ export function Hero() {
               </Button>
             </div>
 
+            {/* Animated Stats */}
+            <div className="mt-8">
+              <StatsCarousel />
+            </div>
+
             <div className="flex gap-4 justify-center lg:justify-start">
               <Button
                 variant="ghost"
@@ -94,9 +104,10 @@ export function Hero() {
                 asChild
               >
                 <a
-                  href="https://www.linkedin.com/in/rajat-roy-78698913/"
+                  href="https://www.linkedin.com/in/royrajat/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
@@ -107,8 +118,26 @@ export function Hero() {
                 className="h-12 w-12 rounded-full hover:bg-primary/10"
                 asChild
               >
-                <a href="mailto:roy777rajat@gmail.com">
+                <a 
+                  href="mailto:roy777rajat@gmail.com"
+                  aria-label="Email"
+                >
                   <Mail className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-12 w-12 rounded-full hover:bg-primary/10"
+                asChild
+              >
+                <a
+                  href="https://www.facebook.com/rajat.ray.716/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook Profile"
+                >
+                  <Facebook className="h-5 w-5" />
                 </a>
               </Button>
             </div>

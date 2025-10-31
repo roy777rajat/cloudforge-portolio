@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Send, Github, Facebook } from "lucide-react";
 import { toast } from "sonner";
 
 export function Contact() {
@@ -102,13 +102,65 @@ export function Contact() {
                 <div>
                   <h4 className="font-semibold mb-1">LinkedIn</h4>
                   <a
-                    href="https://www.linkedin.com/in/rajat-roy-78698913/"
+                    href="https://www.linkedin.com/in/royrajat/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-colors"
                   >
                     Connect with me
                   </a>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div className="pt-6 border-t border-border">
+                <h4 className="font-semibold mb-4">Connect on Social Media</h4>
+                <div className="flex gap-3">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-10 w-10 rounded-full hover:bg-primary/10 hover:border-primary/30"
+                    asChild
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/royrajat/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-10 w-10 rounded-full hover:bg-primary/10 hover:border-primary/30"
+                    asChild
+                  >
+                    <a
+                      href="https://github.com/roy777rajat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-10 w-10 rounded-full hover:bg-primary/10 hover:border-primary/30"
+                    asChild
+                  >
+                    <a
+                      href="https://www.facebook.com/rajat.ray.716/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
