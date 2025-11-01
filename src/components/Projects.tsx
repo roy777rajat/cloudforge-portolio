@@ -9,6 +9,22 @@ import cloudMigrationImg from "@/assets/project-cloud-migration.jpg";
 
 const projects = [
   {
+    title: "AI Driven defect management & incident tracking automation",
+    description:
+      "Efficient handling of defects and incidents via simple chat messages (Whatsapp/Teams/Slack)",
+    tech: ["Python","Anthropic model","Twillo","N8N","Render","AWS"],
+    link: "https://medium.com/@uk.rajatroy/the-ai-powered-defect-workflow-state-machine-mcp-meets-n8n-render-and-whatsapp-slack-3ad8c936b944",
+    image: dataLakeImg,
+  }
+  {
+    title: "Insurance Media Maker - Agentic AI/MCP Based solution",
+    description:
+      "Built end-to-end near real time Insurance Product Media Maker, demonstrates how Agentic AI, Claude/Anthropic LLMs, AWS Strands, Nova, Amazon Polly and MCP-based multi-agent orchestration can transform insurance workflows end-to-end, generating real-time, multimedia content for every customer interaction.",
+    tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova" , "Anthropic model"],
+    link: "https://medium.com/@uk.rajatroy/insurance-product-media-maker-agentic-ai-with-llms-multi-agent-orchestration-mcp-and-media-92840d27806c",
+    image: dataLakeImg,
+  }
+  {
     title: "Insurance Data Lake Modernization",
     description:
       "Built end-to-end S3-based data lake using AWS Glue and PySpark with validation tooling. Improved transaction processing speed by 35% enabling near real-time payments.",
@@ -21,15 +37,15 @@ const projects = [
     description:
       "Leveraged AWS Textract and Bedrock for automated document analysis and classification, reducing manual processing time by 60%.",
     tech: ["AWS Bedrock", "Textract", "Lambda", "Python", "GenAI"],
-    link: "https://www.linkedin.com/in/royrajat/",
+    link: "https://medium.com/@uk.rajatroy/automating-insurance-claim-initiation-using-aws-and-generative-ai-79456ac2d16e",
     image: aiClaimsImg,
   },
   {
-    title: "Neo4J Chatbot Framework",
+    title: "Neo4J Chatbot Framework with Legacy JSP Crawling",
     description:
       "Graph-based chatbot system with LLM integration improving customer onboarding automation by 80% with intelligent context awareness.",
     tech: ["Neo4J", "Python", "AWS", "Graph DB", "Bedrock"],
-    link: "https://www.linkedin.com/in/royrajat/",
+    link: "https://medium.com/@uk.rajatroy/transforming-legacy-insurance-with-neo4j-redis-and-ai-robust-scalable-low-latency-smart-2b72907fa23c",
     image: neo4jChatbotImg,
   },
   {
@@ -37,7 +53,7 @@ const projects = [
     description:
       "Real-time vehicle tracking system using PyFlink and Redis Cloud via Kinesis for instant location updates and live map visualization.",
     tech: ["PyFlink", "Redis", "Kinesis", "Real-time", "AWS"],
-    link: "https://www.linkedin.com/in/royrajat/",
+    link: "https://medium.com/@uk.rajatroy/modern-insurance-is-in-motion-real-time-vehicle-tracking-roadside-assistance-rsa-cover-70cc2d836b90",
     image: vehicleTrackingImg,
   },
   {
@@ -45,7 +61,7 @@ const projects = [
     description:
       "Implemented Lambda EventBridge monitoring with Dynatrace integration for comprehensive observability and proactive alerting.",
     tech: ["EventBridge", "Lambda", "Dynatrace", "CloudWatch", "SNS"],
-    link: "https://www.linkedin.com/in/royrajat/",
+    link: "https://medium.com/@uk.rajatroy/from-spring-boot-insurance-app-to-full-cloud-observability-jmeter-asg-alb-and-dynatrace-906c244305c2",
     image: monitoringImg,
   },
   {

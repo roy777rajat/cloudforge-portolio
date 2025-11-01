@@ -44,7 +44,6 @@ const experiences = [
     description:
       "Delivered API-first modernization, workflow orchestration, and digital insurance platform engineering using Java, Kafka, and Spring MVC.",
     achievements: [
-      "Architected high-availability microservices with 99.9% SLA uptime for a leading South African insurer's omni-channel platform.",
       "Designed and developed YAML-based orchestration frameworks for API workflow automation across distributed components.",
       "Optimized API response latency by 40% through advanced caching and connection pooling strategies.",
       "Implemented Spring MVC-based service layers following SAGA patterns and Kafka-based EDA for resilient transactional processing.",
@@ -121,7 +120,9 @@ export const Experience = () => {
                     <p className="text-lg font-medium text-muted-foreground">{exp.company}</p>
                   </div>
                   <div className="flex flex-col items-start md:items-end mt-2 md:mt-0">
-                    <Badge variant="secondary" className="mb-2">{exp.period}</Badge>
+                    <Badge variant="secondary" className="mb-2">
+                      {exp.period}
+                    </Badge>
                     <span className="text-sm text-muted-foreground">{exp.location}</span>
                   </div>
                 </div>
