@@ -21,26 +21,23 @@ export function About() {
               <span className="font-semibold text-primary">
                 Associate Consultant at Tata Consultancy Services (Diligenta Ltd, UK)
               </span>{" "}
-              with a passion for building data-driven ecosystems on AWS Cloud. From 
-              designing enterprise data lakes and near-real-time pipelines to modernizing 
-              legacy insurance operations, Rajat believes that{" "}
+              with a passion for building data-driven ecosystems on AWS Cloud. From designing enterprise data lakes and
+              near-real-time pipelines to modernizing legacy insurance operations, Rajat believes that{" "}
               <span className="italic">data is meaningful only when it delivers measurable value</span>.
             </p>
             <p className="text-lg leading-relaxed">
-              His journey from developer to cloud data engineer has been marked by continuous 
-              learning, hands-on innovation, and an eagerness to integrate AI into traditional 
-              insurance workflows. He designs scalable ETL pipelines using AWS Glue and Apache 
-              PySpark, implements AI-driven automation with AWS Bedrock, and builds API frameworks 
-              aligned with strategic business goals.
+              His journey from developer to cloud data engineer has been marked by continuous learning, hands-on
+              innovation, and an eagerness to integrate AI into traditional insurance workflows. He designs scalable ETL
+              pipelines using AWS Glue and Apache PySpark, implements AI-driven automation with AWS Bedrock, and builds
+              API frameworks aligned with strategic business goals.
             </p>
             <p className="text-lg leading-relaxed">
               Backed by{" "}
               <span className="font-semibold text-accent">
-                12+ professional certifications including AWS Solutions Architect and 
-                Databricks Data Engineering
+                12+ professional certifications including AWS Solutions Architect and Databricks Data Engineering
               </span>
-              , Rajat empowers teams to adopt cloud-native, high-performance architectures 
-              that drive digital transformation across the insurance industry.
+              , Rajat empowers teams to adopt cloud-native, high-performance architectures that drive digital
+              transformation across the insurance industry.
             </p>
 
             <div className="flex items-center gap-2 text-muted-foreground">
@@ -57,12 +54,9 @@ export function About() {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-xl mb-2">
-                    10+ Years Experience
-                  </h3>
+                  <h3 className="font-heading font-semibold text-xl mb-2">10+ Years Experience</h3>
                   <p className="text-muted-foreground">
-                    Across India, UAE, South Africa, and the UK, delivering
-                    enterprise-scale solutions
+                    Across India, UAE, South Africa, and the UK, delivering enterprise-scale solutions
                   </p>
                 </div>
               </div>
@@ -74,9 +68,7 @@ export function About() {
                   <Award className="h-6 w-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-xl mb-2">
-                    Key Achievements
-                  </h3>
+                  <h3 className="font-heading font-semibold text-xl mb-2">Key Achievements</h3>
                   <ul className="text-muted-foreground space-y-2">
                     <li>• Built AWS-based data lakes for insurance transformation</li>
                     <li>• Developed AI orchestration models with 80% automation</li>
@@ -91,7 +83,7 @@ export function About() {
               <p className="text-muted-foreground">
                 <span className="font-semibold">B.Tech</span>
                 <br />
-                West Bengal University of Technology, India (2005)
+                West Bengal University of Technology, India
               </p>
             </div>
           </div>
