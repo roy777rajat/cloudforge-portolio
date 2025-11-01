@@ -70,7 +70,9 @@ const certifications = [
   },
 ];
 
-// Group certifications by provider
+// Group certifications by provider with specific order
+const providerOrder = ["AWS", "Databricks", "Confluent", "Udemy", "Neo4j"];
+
 const groupedCertifications = certifications.reduce((acc, cert) => {
   if (!acc[cert.provider]) {
     acc[cert.provider] = [];
@@ -78,6 +80,11 @@ const groupedCertifications = certifications.reduce((acc, cert) => {
   acc[cert.provider].push(cert);
   return acc;
 }, {} as Record<string, typeof certifications>);
+
+// Sort providers according to providerOrder
+const sortedProviders = providerOrder
+  .filter(provider => groupedCertifications[provider])
+  .map(provider => [provider, groupedCertifications[provider]] as const);
 
 const recognitions = [
   {
@@ -128,7 +135,7 @@ export function Achievements() {
               className="w-full"
             >
               <CarouselContent className="-ml-4">
-                {Object.entries(groupedCertifications).map(([provider, certs], groupIndex) => (
+                {sortedProviders.map(([provider, certs], groupIndex) => (
                   <CarouselItem key={groupIndex} className="pl-4 md:basis-1/2 lg:basis-1/3">
                     <div className="p-6 rounded-xl border-2 border-primary/30 bg-gradient-to-br from-card to-card/50 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                       <div className="flex items-center gap-3 mb-4 pb-3 border-b border-primary/20">
