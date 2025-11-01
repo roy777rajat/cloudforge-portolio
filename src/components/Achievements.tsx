@@ -88,7 +88,7 @@ const sortedProviders = providerOrder
 
 const recognitions = [
   {
-    title: "Winner - AI Magic with AWS Q Innovation Challenge",
+    title: "Winner - AI Magic with AWS Q Innovation Challenge 2025",
     icon: "🏆",
   },
   {

@@ -17,7 +17,7 @@ export function About() {
           {/* Left: Bio */}
           <div className="space-y-6 animate-slide-up">
             <p className="text-lg leading-relaxed">
-              Rajat Roy is an{" "}
+              Rajat is an{" "}
               <span className="font-semibold text-primary">
                 Associate Consultant at Tata Consultancy Services (Diligenta Ltd, UK)
               </span>{" "}
