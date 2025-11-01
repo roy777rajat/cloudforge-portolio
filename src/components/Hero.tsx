@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Linkedin, Mail, Facebook } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, Facebook, Github } from "lucide-react";
 import { StatsCarousel } from "@/components/StatsCarousel";
 
 const roles = [
@@ -119,6 +119,38 @@ export function Hero() {
                 asChild
               >
                 <a 
+                  href="https://github.com/roy777rajat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Profile"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-12 w-12 rounded-full hover:bg-primary/10"
+                asChild
+              >
+                <a
+                  href="https://medium.com/@uk.rajatroy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Medium Profile"
+                >
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                  </svg>
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-12 w-12 rounded-full hover:bg-primary/10"
+                asChild
+              >
+                <a 
                   href="mailto:roy777rajat@gmail.com"
                   aria-label="Email"
                 >
@@ -147,8 +179,12 @@ export function Hero() {
           <div className="relative flex justify-center lg:justify-end animate-fade-in">
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-3xl opacity-30 animate-glow" />
-              <div className="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden shadow-2xl bg-gradient-to-br from-card to-card/80 flex items-center justify-center">
-                <div className="text-8xl font-bold gradient-text">RR</div>
+              <div className="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden shadow-2xl">
+                <img 
+                  src="/src/assets/profile-picture.jpg" 
+                  alt="Rajat Roy - AWS Cloud & Data Engineer"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

@@ -4,37 +4,79 @@ const lobs = [
   {
     icon: Shield,
     title: "Life Insurance",
-    points: ["Policy lifecycle management", "Underwriting automation", "Claims processing"],
+    points: [
+      "Policy lifecycle management from issuance to maturity",
+      "Premium calculation and benefit processing automation",
+      "Surrender processing with data lineage tracking",
+      "Automated reporting and regulatory compliance",
+      "Maturity benefits calculation with AWS-based workflows"
+    ],
   },
   {
     icon: Heart,
     title: "Health Insurance",
-    points: ["Claims intake & triage", "Provider integrations", "Member portal APIs"],
+    points: [
+      "Claims adjudication and settlement automation",
+      "Provider network integration and data synchronization",
+      "Medical data ETL flows with quality checks",
+      "Policy renewals with AI-based fraud detection",
+      "Real-time eligibility verification systems"
+    ],
   },
   {
     icon: TrendingUp,
     title: "Pensions",
-    points: ["Contribution tracking", "Annuity calculations", "Regulatory compliance"],
+    points: [
+      "Contribution tracking and fund management",
+      "Benefit calculation engines with complex rules",
+      "Regulatory data reporting in AWS environment",
+      "Periodic statement generation and distribution",
+      "Investment portfolio tracking and rebalancing"
+    ],
   },
   {
     icon: FileText,
     title: "Annuities",
-    points: ["Product configuration", "Payment processing", "Customer statements"],
+    points: [
+      "Periodic payout computation and scheduling",
+      "Interest revaluation with automated adjustments",
+      "AWS-based payment automation and tracking",
+      "Tax calculation and reporting workflows",
+      "Customer statement generation and delivery"
+    ],
   },
   {
     icon: CheckCircle,
     title: "Claims",
-    points: ["AI-powered document parsing", "Fraud detection", "Settlement workflows"],
+    points: [
+      "FNOL to settlement pipeline automation",
+      "Document AI with AWS Textract integration",
+      "Workflow orchestration with Bedrock models",
+      "Fraud detection using machine learning",
+      "Real-time claim status tracking and notifications"
+    ],
   },
   {
     icon: Users,
     title: "Policy Administration",
-    points: ["PAS modernization", "Microservices migration", "Real-time data sync"],
+    points: [
+      "End-to-end policy record management systems",
+      "Data migration to modern PAS platforms",
+      "Microservices-based policy operations",
+      "Real-time data sync across systems",
+      "Legacy system modernization and cloud migration"
+    ],
   },
   {
     icon: Briefcase,
     title: "Underwriting",
-    points: ["Risk assessment automation", "Rules engine integration", "Decision support systems"],
+    points: [
+      "Risk assessment rules engine implementation",
+      "Data quality scoring and validation frameworks",
+      "AI-assisted decision support systems",
+      "Automated underwriting workflow orchestration",
+      "Integration with external risk assessment APIs"
+    ],
   },
 ];
 

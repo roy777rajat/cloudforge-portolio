@@ -8,7 +8,7 @@ const stats = [
   { value: "11+", label: "AWS Cloud Skills" },
   { value: "5+", label: "Data Engineering Skills" },
   { value: "4+", label: "Streaming/Realtime Stack" },
-  { value: "2+", label: "Certifications" },
+  { value: "12+", label: "Certifications" },
 ];
 
 export function StatsCarousel() {

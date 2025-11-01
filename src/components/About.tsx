@@ -17,27 +17,30 @@ export function About() {
           {/* Left: Bio */}
           <div className="space-y-6 animate-slide-up">
             <p className="text-lg leading-relaxed">
-              Rajat Roy currently serves as an{" "}
+              Rajat Roy is an{" "}
               <span className="font-semibold text-primary">
                 Associate Consultant at Tata Consultancy Services (Diligenta Ltd, UK)
-              </span>
-              , focusing on AWS cloud migrations, data engineering, and insurance
-              data transformation.
+              </span>{" "}
+              with a passion for building data-driven ecosystems on AWS Cloud. From 
+              designing enterprise data lakes and near-real-time pipelines to modernizing 
+              legacy insurance operations, Rajat believes that{" "}
+              <span className="italic">data is meaningful only when it delivers measurable value</span>.
             </p>
             <p className="text-lg leading-relaxed">
-              He designs scalable ETL pipelines using AWS Glue and Apache PySpark to
-              enhance performance and streamline workflows. As a proponent of
-              enterprise modernization, Rajat implements AI-driven automation and API
-              frameworks aligned with strategic business goals.
+              His journey from developer to cloud data engineer has been marked by continuous 
+              learning, hands-on innovation, and an eagerness to integrate AI into traditional 
+              insurance workflows. He designs scalable ETL pipelines using AWS Glue and Apache 
+              PySpark, implements AI-driven automation with AWS Bedrock, and builds API frameworks 
+              aligned with strategic business goals.
             </p>
             <p className="text-lg leading-relaxed">
               Backed by{" "}
               <span className="font-semibold text-accent">
-                AWS Solutions Architect and Databricks for Data Engineering
-                certifications
+                12+ professional certifications including AWS Solutions Architect and 
+                Databricks Data Engineering
               </span>
-              , he empowers teams to adopt cloud-native, high-performance
-              architectures that drive digital transformation.
+              , Rajat empowers teams to adopt cloud-native, high-performance architectures 
+              that drive digital transformation across the insurance industry.
             </p>
 
             <div className="flex items-center gap-2 text-muted-foreground">
