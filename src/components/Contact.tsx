@@ -4,6 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Send, Github, Facebook } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
+
+// Initialize EmailJS with your public key
+emailjs.init("xCA_QyALsHlCIc1FB");
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -11,8 +15,9 @@ export function Contact() {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -28,9 +33,28 @@ export function Contact() {
       return;
     }
 
-    // Here you would typically send the form data to a backend
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        "service_bpq8bp6", // Service ID
+        "template_u47nlzk", // Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        }
+      );
+
+      toast.success("Message sent successfully! I'll get back to you soon.");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -250,9 +274,10 @@ export function Contact() {
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                   size="lg"
+                  disabled={isSubmitting}
                 >
                   <Send className="h-5 w-5 mr-2" />
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </div>
             </form>
