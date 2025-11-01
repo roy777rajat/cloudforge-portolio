@@ -1,5 +1,3 @@
-import { Briefcase, MapPin, Calendar } from "lucide-react";
-
 const experiences = [
   {
     title: "Associate Consultant",
@@ -7,135 +5,100 @@ const experiences = [
     location: "United Kingdom",
     period: "2022 - Present",
     description:
-      "Built AWS-based insurance data lakes, ETL pipelines with PySpark, implemented Lambda EventBridge monitoring, and integrated Dynatrace for observability.",
+      "Senior Data Engineer responsible for end-to-end delivery of large-scale insurance transformation and data migration initiatives using AWS Cloud and PySpark.",
     achievements: [
-      "Designed scalable data lake architecture using AWS S3, Glue, and Athena",
-      "Improved ETL pipeline performance by 35% with PySpark optimization",
-      "Implemented real-time monitoring with EventBridge and Dynatrace",
+      "Lead data engineering initiatives across insurance modernization programs — from solution design to delivery, mentoring 10+ engineers.",
+      "Architected and deployed an AWS-based insurance data lake leveraging S3, Glue Crawlers, Glue Studio, and PySpark, streamlining data mining and validation workflows.",
+      "Engineered a near real-time ETL pipeline in AWS Glue and Apache PySpark, achieving 35% improvement in transaction processing speed for payment systems.",
+      "Implemented proactive alerting and monitoring using AWS Lambda, EventBridge, and SNS, improving operational visibility and incident response times.",
+      "Designed SQL-based static monitoring dashboards to track daily operational KPIs and ensure end-to-end data integrity.",
+      "Established robust data governance and lineage tracking, including data salting, deduplication, and windowing mechanisms.",
+      "Integrated Dynatrace with EC2 clusters for end-to-end observability of RESTful API calls, latency metrics, and application health monitoring.",
+      "Provided day-to-day production support, defect resolution, and business continuity assurance for mission-critical insurance workloads.",
     ],
   },
   {
     title: "Associate Consultant",
-    company: "TCS India",
+    company: "Tata Consultancy Services (India)",
     location: "India",
     period: "2020 - 2022",
     description:
-      "Migrated PAS systems to AWS, implemented AI claim processing with Textract & Bedrock, and developed a Neo4J-powered chatbot.",
+      "Led AWS cloud migration, AI automation, and microservice modernization for enterprise insurance platforms.",
     achievements: [
-      "Led cloud migration of legacy PAS systems to AWS",
-      "Built AI-powered document processing pipeline using AWS Bedrock",
-      "Developed graph-based chatbot achieving 80% automation in onboarding",
+      "Executed seamless migration of the in-house Policy Administration System (PAS) to AWS Cloud with zero downtime.",
+      "Designed AI-driven document processing workflows using AWS Textract and Bedrock to automate claims intake and validation.",
+      "Developed a Neo4J-powered chatbot integrated with AWS Bedrock, achieving 80% automation in customer onboarding and servicing.",
+      "Scaled core insurance systems through cloud-native re-architecture, improving reliability and vendor integration capabilities.",
+      "Built low-latency, high-availability microservices with API Gateway (rate limiting, throttling), Lambda, and DynamoDB for resilient insurance APIs.",
+      "Refactored monolithic services into microservices leveraging event-driven architecture (EDA) and SAGA orchestration for high-performance automation.",
     ],
   },
   {
     title: "Assistant Consultant",
-    company: "TCS South Africa",
+    company: "Tata Consultancy Services (South Africa)",
     location: "South Africa",
     period: "2016 - 2020",
     description:
-      "Designed high-availability APIs, created YAML-based orchestration, and optimized RESTful services.",
+      "Delivered API-first modernization, workflow orchestration, and digital insurance platform engineering using Java, Kafka, and Spring MVC.",
     achievements: [
-      "Architected microservices with 99.9% uptime SLA",
-      "Developed YAML-based orchestration framework for workflow automation",
-      "Optimized API response times by 40% through caching strategies",
+      "Architected high-availability microservices with 99.9% SLA uptime for a leading South African insurer’s omni-channel platform.",
+      "Designed and developed YAML-based orchestration frameworks for API workflow automation across distributed components.",
+      "Optimized API response latency by 40% through advanced caching and connection pooling strategies.",
+      "Implemented Spring MVC-based service layers following SAGA patterns and Kafka-based EDA for resilient transactional processing.",
+      "Collaborated cross-functionally to achieve digital transformation of legacy systems into modern, scalable microservice ecosystems.",
     ],
   },
   {
     title: "IT Analyst",
-    company: "TCS UAE",
-    location: "UAE",
+    company: "Tata Consultancy Services (UAE)",
+    location: "United Arab Emirates",
     period: "2014 - 2016",
     description:
-      "Integrated PAS with Oracle Financials; implemented Customer 360 dashboards.",
+      "Application Developer and Production Support Analyst for TCS BaNCS insurance transformation projects across the Middle East.",
     achievements: [
-      "Successfully integrated PAS systems with Oracle Financials",
-      "Built comprehensive Customer 360 analytics dashboards",
-      "Reduced data synchronization time by 50%",
+      "Integrated PAS systems with Oracle Financials to enable real-time financial reconciliation and reporting.",
+      "Developed Customer 360 analytics dashboards enhancing customer visibility across claims and policy lifecycles.",
+      "Reduced data synchronization latency by 50% through optimized SQL-based ETL processes and API integrations.",
+      "Executed daily reconciliation for payable/receivable accounts, general ledger, and accounting entries ensuring financial accuracy.",
+      "Provided Level-2 production support, incident triage, and defect remediation to sustain seamless insurance operations.",
     ],
   },
   {
     title: "System Engineer",
-    company: "TCS India",
+    company: "Tata Consultancy Services (India)",
     location: "India",
     period: "2010 - 2014",
     description:
-      "System engineering, TCS BaNCS Insurance product development, and foundational technical roles across leading organizations.",
+      "Core developer in TCS BaNCS Insurance and enterprise system integration projects with a focus on backend and API development.",
     achievements: [
-	"Designed and implemented robust APIs for enhanced system integration.",
-	"Developed and managed databases with Core Java, Spring, JDBC, and Oracle PLSQL/SQL.",
-	"Collaborated with cross-functional teams to optimize application performance and drive project success.",
-	"Executed scalable system design and architecture, ensuring adaptability for future growth.",
-	"Led seamless integration efforts, maintaining data flow and functionality across platforms.",
+      "Developed and integrated high-performance REST APIs enabling cross-platform data exchange and interoperability.",
+      "Engineered relational database solutions using Core Java, Spring, JDBC, and Oracle PL/SQL ensuring optimized query performance.",
+      "Collaborated with architecture and QA teams to enhance system performance and scalability across multi-tier applications.",
+      "Contributed to end-to-end design and implementation of reusable frameworks supporting long-term product evolution.",
+    ],
+  },
+  {
+    title: "Technical Analyst",
+    company: "Cognizant Technology Solutions",
+    location: "India",
+    period: "2010",
+    description: "Pega PRPC Business Process Management (BPM) application development and testing.",
+    achievements: [
+      "Developed process flows, user interfaces, and rule configurations within Pega PRPC to automate customer service workflows.",
+      "Performed unit testing, debugging, and performance tuning to ensure high-quality BPM implementations.",
+    ],
+  },
+  {
+    title: "System Engineer",
+    company: "Bennett Coleman & Co. Ltd (The Times of India Group)",
+    location: "India",
+    period: "2007 - 2010",
+    description:
+      "System Engineer in media publication automation with focus on MIS, dashboarding, and cross-departmental digital integration.",
+    achievements: [
+      "Developed and optimized MIS solutions using PHP, HTML, JavaScript, AJAX, and MySQL for print and digital operations.",
+      "Integrated newsroom and production workflows to improve operational efficiency and reduce turnaround time.",
+      "Designed interactive dashboards to monitor publication metrics, improving visibility across press and pre-press units.",
     ],
   },
 ];
-
-export function Experience() {
-  return (
-    <section id="experience" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Professional <span className="gradient-text">Journey</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A decade of innovation across four continents
-          </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary/30 hidden md:block" />
-
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="relative animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-6 w-5 h-5 bg-primary rounded-full border-4 border-background shadow-lg hidden md:block" />
-
-                <div className="md:ml-20 bg-card rounded-xl p-6 border border-border shadow-lg tech-card">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-heading font-bold mb-2">
-                        {exp.title}
-                      </h3>
-                      <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <Briefcase className="h-4 w-4 text-primary" />
-                          <span className="font-semibold">{exp.company}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4 text-accent" />
-                          <span>{exp.location}</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
-                      <Calendar className="h-4 w-4" />
-                      <span>{exp.period}</span>
-                    </div>
-                  </div>
-
-                  <p className="text-muted-foreground mb-4">{exp.description}</p>
-
-                  <div className="space-y-2">
-                    {exp.achievements.map((achievement, i) => (
-                      <div key={i} className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                        <p className="text-sm text-foreground/80">{achievement}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
