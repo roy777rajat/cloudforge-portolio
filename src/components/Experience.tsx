@@ -59,13 +59,13 @@ const experiences = [
     location: "India",
     period: "2010 - 2014",
     description:
-      "System engineering, TCS BaNCS software development, and foundational technical roles across leading organizations.",
+      "System engineering, TCS BaNCS Insurance product development, and foundational technical roles across leading organizations.",
     achievements: [
-      "Designed and implemented robust APIs for enhanced system integration.",
-      "Developed and managed databases with Core Java, Spring, JDBC, and Oracle PLSQL/SQL.",
-      "Collaborated with cross-functional teams to optimize application performance and drive project success.",
-      "Executed scalable system design and architecture, ensuring adaptability for future growth.",
-      "Led seamless integration efforts, maintaining data flow and functionality across platforms.",
+	"Designed and implemented robust APIs for enhanced system integration.",
+	"Developed and managed databases with Core Java, Spring, JDBC, and Oracle PLSQL/SQL.",
+	"Collaborated with cross-functional teams to optimize application performance and drive project success.",
+	"Executed scalable system design and architecture, ensuring adaptability for future growth.",
+	"Led seamless integration efforts, maintaining data flow and functionality across platforms.",
     ],
   },
 ];
