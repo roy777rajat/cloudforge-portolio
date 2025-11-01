@@ -63,6 +63,9 @@ export function Footer() {
           <p className="text-secondary-foreground/70">
             © {new Date().getFullYear()} Rajat Roy. All rights reserved.
           </p>
+          <p className="text-secondary-foreground/50 text-xs mt-2">
+            Last updated: November 1, 2025
+          </p>
         </div>
       </div>
     </footer>
