@@ -15,7 +15,7 @@ const projects = [
     tech: ["Python","Anthropic model","Twillo","N8N","Render","AWS"],
     link: "https://medium.com/@uk.rajatroy/the-ai-powered-defect-workflow-state-machine-mcp-meets-n8n-render-and-whatsapp-slack-3ad8c936b944",
     image: dataLakeImg,
-  }
+  },
   {
     title: "Insurance Media Maker - Agentic AI/MCP Based solution",
     description:
@@ -23,7 +23,7 @@ const projects = [
     tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova" , "Anthropic model"],
     link: "https://medium.com/@uk.rajatroy/insurance-product-media-maker-agentic-ai-with-llms-multi-agent-orchestration-mcp-and-media-92840d27806c",
     image: dataLakeImg,
-  }
+  },
   {
     title: "Insurance Data Lake Modernization",
     description:
