@@ -6,6 +6,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import awsLogo from "@/assets/logo-aws.png";
+import databricksLogo from "@/assets/logo-databricks.png";
+import udemyLogo from "@/assets/logo-udemy.png";
+import confluentLogo from "@/assets/logo-confluent.png";
+import neo4jLogo from "@/assets/logo-neo4j.svg";
 
 const certifications = [
   {
@@ -73,6 +79,14 @@ const certifications = [
 // Group certifications by provider with specific order
 const providerOrder = ["AWS", "Databricks", "Confluent", "Udemy", "Neo4j"];
 
+const providerLogos: Record<string, string> = {
+  AWS: awsLogo,
+  Databricks: databricksLogo,
+  Confluent: confluentLogo,
+  Udemy: udemyLogo,
+  Neo4j: neo4jLogo,
+};
+
 const groupedCertifications = certifications.reduce((acc, cert) => {
   if (!acc[cert.provider]) {
     acc[cert.provider] = [];
@@ -128,6 +142,13 @@ export function Achievements() {
               Professional Certifications
             </h3>
             <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                  stopOnInteraction: false,
+                  stopOnMouseEnter: true,
+                }),
+              ]}
               opts={{
                 align: "start",
                 loop: true,
@@ -139,7 +160,13 @@ export function Achievements() {
                   <CarouselItem key={groupIndex} className="pl-4 md:basis-1/2 lg:basis-1/3">
                     <div className="p-6 rounded-xl border-2 border-primary/30 bg-gradient-to-br from-card to-card/50 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                       <div className="flex items-center gap-3 mb-4 pb-3 border-b border-primary/20">
-                        <Award className="h-6 w-6 text-primary" />
+                        <div className="flex items-center justify-center w-10 h-10 bg-background rounded-lg p-1.5">
+                          <img 
+                            src={providerLogos[provider]} 
+                            alt={`${provider} logo`}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
                         <h4 className="text-lg font-heading font-bold text-primary">
                           {provider}
                         </h4>
