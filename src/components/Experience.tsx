@@ -1,3 +1,6 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
 const experiences = [
   {
     title: "Associate Consultant",
@@ -41,7 +44,7 @@ const experiences = [
     description:
       "Delivered API-first modernization, workflow orchestration, and digital insurance platform engineering using Java, Kafka, and Spring MVC.",
     achievements: [
-      "Architected high-availability microservices with 99.9% SLA uptime for a leading South African insurer’s omni-channel platform.",
+      "Architected high-availability microservices with 99.9% SLA uptime for a leading South African insurer's omni-channel platform.",
       "Designed and developed YAML-based orchestration frameworks for API workflow automation across distributed components.",
       "Optimized API response latency by 40% through advanced caching and connection pooling strategies.",
       "Implemented Spring MVC-based service layers following SAGA patterns and Kafka-based EDA for resilient transactional processing.",
@@ -102,3 +105,40 @@ const experiences = [
     ],
   },
 ];
+
+export const Experience = () => {
+  return (
+    <section id="experience" className="py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12">Professional Experience</h2>
+        <div className="space-y-8">
+          {experiences.map((exp, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">{exp.title}</h3>
+                    <p className="text-lg font-medium text-muted-foreground">{exp.company}</p>
+                  </div>
+                  <div className="flex flex-col items-start md:items-end mt-2 md:mt-0">
+                    <Badge variant="secondary" className="mb-2">{exp.period}</Badge>
+                    <span className="text-sm text-muted-foreground">{exp.location}</span>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">{exp.description}</p>
+                <ul className="space-y-2">
+                  {exp.achievements.map((achievement, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span className="text-sm">{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
