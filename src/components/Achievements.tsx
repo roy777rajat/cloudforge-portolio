@@ -1,80 +1,83 @@
-import { Award, CheckCircle } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Award } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const certifications = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    year: "2023",
-    link: "https://www.credly.com/badges/8817f0f3-7984-47d0-9e8a-1c3f5f861860/linked_in_profile",
-  },
-  {
-    name: "Databricks Certified Data Engineer Associate",
-    issuer: "Databricks",
-    year: "2023",
-    link: "https://credentials.databricks.com/df2a4edd-c36a-42eb-90db-1a1bb78b2e15#acc.lu089eyH",
-  },
-  {
-    name: "Confluent Apache Kafka Fundamentals",
-    issuer: "Confluent",
-    year: "2024",
+    name: "Confluent Apache Kafka Fundamentals Accreditation",
+    provider: "Confluent",
     link: "https://certificates.confluent.io/223f5446-4848-407a-bb1e-217eae0be7bf#acc.omvWMQNF",
   },
   {
-    name: "Databricks Generative AI Fundamentals",
-    issuer: "Databricks",
-    year: "2024",
-    link: "https://credentials.databricks.com/8ea2c1cc-83de-473a-b08f-afaac1177c6f#acc.5YWvwvka",
+    name: "Confluent Data Streaming Engineer",
+    provider: "Confluent",
+    link: "https://certificates.confluent.io/d2ac746e-8de8-4d0e-a56a-d43e550cbf2a#acc.a13JZdsu",
   },
   {
-    name: "Neo4j Certified Professional",
-    issuer: "Neo4j",
-    year: "2024",
-    link: "https://graphacademy.neo4j.com/c/4b88df87-81de-41e9-a7a0-fd6c80fdf1cb/",
+    name: "Kafka Cluster Setup & Administrator",
+    provider: "Udemy",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-bb59cdb4-09b7-472f-9996-1e0c4535ace0.jpg",
   },
   {
-    name: "Redis Certified Developer",
-    issuer: "Redis University",
-    year: "2024",
-    link: "https://bcert.me/bc/html/show-badge.html?b=kmwhckjy",
+    name: "AI Agent Fundamentals - Databricks",
+    provider: "Databricks",
+    link: "https://credentials.databricks.com/c46c29d3-7c23-4e1b-b4fa-a8afdcb92de3#acc.KHYiuzed",
   },
   {
-    name: "Python Associate Developer",
-    issuer: "Python Institute",
-    year: "2022",
-    link: "https://www.linkedin.com/in/royrajat/",
+    name: "GraphQL - Intermediate Cypher Queries",
+    provider: "Neo4j",
+    link: "https://graphacademy.neo4j.com/c/0917a891-71c2-497b-b3ef-ce6295c84be0/",
   },
   {
-    name: "AWS Cloud Quest: Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    year: "2023",
-    link: "https://www.credly.com/badges/c99a6835-b8d9-454f-a825-0cbce8dd5c5e/linked_in_profile",
+    name: "Databricks Platform Architect - Databricks & AWS",
+    provider: "Databricks",
+    link: "https://credentials.databricks.com/0703b9e4-b44e-4af5-85ac-f15e4295c0c6#acc.v0F5SAEh",
   },
   {
-    name: "AWS Lambda Foundations",
-    issuer: "Amazon Web Services",
-    year: "2023",
-    link: "https://www.linkedin.com/in/royrajat/",
+    name: "Databricks Certified Data Engineer Associate",
+    provider: "Databricks",
+    link: "https://credentials.databricks.com/df2a4edd-c36a-42eb-90db-1a1bb78b2e15#acc.lu089eyH",
   },
   {
-    name: "Introduction to Generative AI",
-    issuer: "Google Cloud",
-    year: "2024",
-    link: "https://www.cloudskillsboost.google/public_profiles/4dafa73b-d13a-4b96-a5f7-c881b8a88bd0/badges/12030832",
+    name: "Databricks Certified Data Engineer Professional",
+    provider: "Udemy",
+    link: "https://www.udemy.com/certificate/UC-dd9a1350-6146-4e3e-9df1-515821b7704b/",
   },
   {
-    name: "Prompt Engineering for Generative AI",
-    issuer: "Databricks",
-    year: "2024",
-    link: "https://credentials.databricks.com/7ff25503-6a66-4ac5-90c5-5f050dc1c033#acc.BLlexF5G",
+    name: "Academy Accreditation - Generative AI Fundamentals",
+    provider: "Databricks",
+    link: "https://credentials.databricks.com/1fe3bee3-a8fe-4b8e-afb0-3f7ba74b5d55#acc.Yduk1XxB",
   },
   {
-    name: "Large Language Models",
-    issuer: "Databricks",
-    year: "2024",
-    link: "https://credentials.databricks.com/b4ccb3b1-10f3-42a5-a2b5-9f30a0c19258#acc.0DUHsrvO",
+    name: "AWS Certified Solutions Architect – Associate",
+    provider: "AWS",
+    link: "https://www.credly.com/badges/8817f0f3-7984-47d0-9e8a-1c3f5f861860/linked_in_profile",
+  },
+  {
+    name: "AWS Certified Cloud Practitioner",
+    provider: "AWS",
+    link: "https://www.credly.com/badges/097a83c4-0505-4960-80fb-47b6d2b40a5a/linked_in_profile",
+  },
+  {
+    name: "SQL Analytics and BI on Databricks",
+    provider: "Databricks",
+    link: "https://www.linkedin.com/in/royrajat/details/certifications/1737137484167/single-media-viewer/?profileId=ACoAAAHO68EBcQ0nEsrBTK6DoEJ554ptqOtPBPU",
   },
 ];
+
+// Group certifications by provider
+const groupedCertifications = certifications.reduce((acc, cert) => {
+  if (!acc[cert.provider]) {
+    acc[cert.provider] = [];
+  }
+  acc[cert.provider].push(cert);
+  return acc;
+}, {} as Record<string, typeof certifications>);
 
 const recognitions = [
   {
@@ -111,35 +114,54 @@ export function Achievements() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto space-y-12">
-          {/* Certifications */}
+        <div className="max-w-6xl mx-auto space-y-12">
+          {/* Certifications Carousel */}
           <div>
             <h3 className="text-2xl font-heading font-semibold text-center mb-8">
               Professional Certifications
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {certifications.map((cert, index) => (
-                <a
-                  key={index}
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-4 rounded-xl border border-primary/20 bg-card/50 hover:bg-card hover:border-primary/40 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in cursor-pointer"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  <div className="flex items-start gap-3">
-                    <Award className="h-6 w-6 mt-1 flex-shrink-0 text-primary group-hover:scale-110 transition-transform" />
-                    <div>
-                      <h4 className="text-sm font-heading font-bold mb-1 group-hover:text-primary transition-colors">
-                        {cert.name}
-                      </h4>
-                      <p className="text-xs text-muted-foreground mb-1">{cert.issuer}</p>
-                      <p className="text-xs text-muted-foreground/70">{cert.year}</p>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {Object.entries(groupedCertifications).map(([provider, certs], groupIndex) => (
+                  <CarouselItem key={groupIndex} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                    <div className="p-6 rounded-xl border-2 border-primary/30 bg-gradient-to-br from-card to-card/50 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                      <div className="flex items-center gap-3 mb-4 pb-3 border-b border-primary/20">
+                        <Award className="h-6 w-6 text-primary" />
+                        <h4 className="text-lg font-heading font-bold text-primary">
+                          {provider}
+                        </h4>
+                        <span className="ml-auto text-sm font-semibold text-muted-foreground bg-primary/10 px-2 py-1 rounded-full">
+                          {certs.length}
+                        </span>
+                      </div>
+                      <div className="space-y-3">
+                        {certs.map((cert, certIndex) => (
+                          <a
+                            key={certIndex}
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group block p-3 rounded-lg bg-muted/30 hover:bg-muted/60 border border-transparent hover:border-primary/30 transition-all duration-200 hover:-translate-y-0.5"
+                          >
+                            <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">
+                              {cert.name}
+                            </p>
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                </a>
-              ))}
-            </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex -left-12" />
+              <CarouselNext className="hidden md:flex -right-12" />
+            </Carousel>
           </div>
 
           {/* Recognitions */}
