@@ -181,7 +181,7 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-3xl opacity-30 animate-glow" />
               <div className="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden shadow-2xl">
                 <img 
-                  src="/src/assets/profile-picture.jpg" 
+                  src="https://i.postimg.cc/4yCbmMVH/Rajat.jpg" 
                   alt="Rajat Roy - AWS Cloud & Data Engineer"
                   className="w-full h-full object-cover"
                 />
