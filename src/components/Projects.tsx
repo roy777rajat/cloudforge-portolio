@@ -1,73 +1,75 @@
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import dataLakeImg from "@/assets/project-data-lake.jpg";
-import aiClaimsImg from "@/assets/project-ai-claims.jpg";
-import neo4jChatbotImg from "@/assets/project-neo4j-chatbot.jpg";
-import vehicleTrackingImg from "@/assets/project-vehicle-tracking.jpg";
-import monitoringImg from "@/assets/project-monitoring.jpg";
-import cloudMigrationImg from "@/assets/project-cloud-migration.jpg";
+import defectManagementImg from "@/assets/project-defect-management.jpg";
+import mediaMakerImg from "@/assets/project-media-maker.jpg";
+import dataLakeImg from "@/assets/project-data-lake-new.jpg";
+import aiClaimsImg from "@/assets/project-ai-claims-new.jpg";
+import neo4jChatbotImg from "@/assets/project-neo4j-new.jpg";
+import vehicleTrackingImg from "@/assets/project-vehicle-new.jpg";
+import monitoringImg from "@/assets/project-monitoring-new.jpg";
+import cloudMigrationImg from "@/assets/project-cloud-migration-new.jpg";
 
 const projects = [
   {
-    title: "AI Driven defect management & incident tracking automation",
+    title: "AI-Driven Defect Management & Incident Tracking",
     description:
-      "Efficient handling of defects and incidents via simple chat messages (Whatsapp/Teams/Slack)",
-    tech: ["Python","Anthropic model","Twillo","N8N","Render","AWS"],
+      "Revolutionized defect tracking with conversational AI, enabling teams to manage incidents through WhatsApp, Teams, and Slack. Built intelligent state machine workflows using Anthropic's Claude, N8N automation, and real-time notifications via Twilio.",
+    tech: ["Python", "Claude AI", "Twilio", "N8N", "Render", "AWS"],
     link: "https://medium.com/@uk.rajatroy/the-ai-powered-defect-workflow-state-machine-mcp-meets-n8n-render-and-whatsapp-slack-3ad8c936b944",
-    image: dataLakeImg,
+    image: defectManagementImg,
   },
   {
-    title: "Insurance Media Maker - Agentic AI/MCP Based solution",
+    title: "Insurance Media Maker - Multi-Agent AI Platform",
     description:
-      "Built end-to-end near real time Insurance Product Media Maker, demonstrates how Agentic AI, Claude/Anthropic LLMs, AWS Strands, Nova, Amazon Polly and MCP-based multi-agent orchestration can transform insurance workflows end-to-end, generating real-time, multimedia content for every customer interaction.",
-    tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova" , "Anthropic model"],
+      "Developed an innovative end-to-end media generation platform leveraging Agentic AI and multi-agent orchestration. Integrates AWS Bedrock, Nova, Amazon Polly, and Claude to automatically create multimedia insurance content in real-time for personalized customer experiences.",
+    tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova", "Claude AI"],
     link: "https://medium.com/@uk.rajatroy/insurance-product-media-maker-agentic-ai-with-llms-multi-agent-orchestration-mcp-and-media-92840d27806c",
-    image: dataLakeImg,
+    image: mediaMakerImg,
   },
   {
-    title: "Insurance Data Lake Modernization",
+    title: "Enterprise Data Lake Modernization",
     description:
-      "Built end-to-end S3-based data lake using AWS Glue and PySpark with validation tooling. Improved transaction processing speed by 35% enabling near real-time payments.",
+      "Architected scalable S3-based data lake infrastructure using AWS Glue and PySpark. Implemented comprehensive data validation frameworks and ETL pipelines, achieving 35% faster transaction processing and enabling near real-time payment analytics for insurance operations.",
     tech: ["AWS S3", "Glue", "PySpark", "Athena", "Lambda"],
     link: "https://www.linkedin.com/in/royrajat/",
     image: dataLakeImg,
   },
   {
-    title: "AI-Powered Claim Processing",
+    title: "AI-Powered Claims Processing Automation",
     description:
-      "Leveraged AWS Textract and Bedrock for automated document analysis and classification, reducing manual processing time by 60%.",
+      "Transformed claims workflows using AWS Textract for intelligent document extraction and AWS Bedrock for classification. Reduced manual processing time by 60% through automated claim validation, fraud detection, and smart routing capabilities.",
     tech: ["AWS Bedrock", "Textract", "Lambda", "Python", "GenAI"],
     link: "https://medium.com/@uk.rajatroy/automating-insurance-claim-initiation-using-aws-and-generative-ai-79456ac2d16e",
     image: aiClaimsImg,
   },
   {
-    title: "Neo4J Chatbot Framework with Legacy JSP Crawling",
+    title: "Neo4j Knowledge Graph Chatbot",
     description:
-      "Graph-based chatbot system with LLM integration improving customer onboarding automation by 80% with intelligent context awareness.",
-    tech: ["Neo4J", "Python", "AWS", "Graph DB", "Bedrock"],
+      "Built sophisticated graph-based AI chatbot combining Neo4j's relationship intelligence with LLM capabilities. Crawled and indexed legacy JSP systems, improving customer onboarding automation by 80% through context-aware conversations and intelligent policy recommendations.",
+    tech: ["Neo4J", "Python", "AWS Bedrock", "Graph DB", "Redis"],
     link: "https://medium.com/@uk.rajatroy/transforming-legacy-insurance-with-neo4j-redis-and-ai-robust-scalable-low-latency-smart-2b72907fa23c",
     image: neo4jChatbotImg,
   },
   {
-    title: "Vehicle Tracking & RSA Dispatch",
+    title: "Real-Time Vehicle Tracking & RSA Dispatch",
     description:
-      "Real-time vehicle tracking system using PyFlink and Redis Cloud via Kinesis for instant location updates and live map visualization.",
+      "Engineered high-performance real-time tracking system processing millions of location events using PyFlink stream processing and Redis Cloud. Integrated with AWS Kinesis for sub-second location updates, enabling instant roadside assistance dispatch and live fleet visualization.",
     tech: ["PyFlink", "Redis", "Kinesis", "Real-time", "AWS"],
     link: "https://medium.com/@uk.rajatroy/modern-insurance-is-in-motion-real-time-vehicle-tracking-roadside-assistance-rsa-cover-70cc2d836b90",
     image: vehicleTrackingImg,
   },
   {
-    title: "Event-Driven Monitoring System",
+    title: "Enterprise Observability & Monitoring Platform",
     description:
-      "Implemented Lambda EventBridge monitoring with Dynatrace integration for comprehensive observability and proactive alerting.",
+      "Designed comprehensive event-driven monitoring architecture using AWS EventBridge and Lambda. Integrated Dynatrace for full-stack observability, proactive alerting, and performance analytics. Achieved 99.9% uptime with automated incident response and CloudWatch metrics.",
     tech: ["EventBridge", "Lambda", "Dynatrace", "CloudWatch", "SNS"],
     link: "https://medium.com/@uk.rajatroy/from-spring-boot-insurance-app-to-full-cloud-observability-jmeter-asg-alb-and-dynatrace-906c244305c2",
     image: monitoringImg,
   },
   {
-    title: "PAS to Cloud Migration",
+    title: "Legacy PAS Cloud Migration",
     description:
-      "Successfully migrated legacy Policy Administration Systems to AWS cloud with zero downtime using lift-and-shift and cloud-native patterns.",
+      "Led critical migration of Policy Administration Systems to AWS cloud infrastructure with zero downtime. Employed hybrid lift-and-shift and cloud-native refactoring strategies, modernizing Oracle-based systems into scalable microservices architecture using API Gateway and Lambda.",
     tech: ["AWS", "Migration", "Oracle", "API Gateway", "Microservices"],
     link: "https://www.linkedin.com/in/royrajat/",
     image: cloudMigrationImg,
