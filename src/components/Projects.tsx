@@ -8,6 +8,7 @@ import neo4jChatbotImg from "@/assets/project-neo4j-new.jpg";
 import vehicleTrackingImg from "@/assets/project-vehicle-new.jpg";
 import monitoringImg from "@/assets/project-monitoring-new.jpg";
 import cloudMigrationImg from "@/assets/project-cloud-migration-new.jpg";
+import ragKnowledgeChatImg from "@/assets/project-rag-knowledge-chat.jpg";
 
 const projects = [
   {
@@ -79,7 +80,7 @@ const projects = [
     description: "Similarity Evaluation with RAG.",
     tech: ["Python", "OpenAI", "S3", "Dynamo DB", "PostgreSQL"],
     link: "https://medium.com/@uk.rajatroy/similarity-evaluation-unified-knowledge-chat-with-pdf-and-sql-data-using-openai-a1693d9a5ca0",
-    image: cloudMigrationImg,
+    image: ragKnowledgeChatImg,
   },
 ];
 
