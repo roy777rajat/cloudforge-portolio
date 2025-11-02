@@ -11,8 +11,12 @@ import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
+import { useAnalytics } from "@/hooks/useAnalytics";
 
 const Index = () => {
+  // Initialize analytics tracking
+  useAnalytics();
+
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <div className="min-h-screen">

@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Send, Github, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
+import { trackContactSubmit } from "@/lib/analytics";
 
 // Initialize EmailJS with your public key
 emailjs.init("xCA_QyALsHlCIc1FB");
@@ -49,6 +50,7 @@ export function Contact() {
 
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
+      trackContactSubmit();
     } catch (error) {
       console.error("EmailJS Error:", error);
       toast.error("Failed to send message. Please try again later.");
