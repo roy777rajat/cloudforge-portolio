@@ -20,10 +20,10 @@ export const useAnalytics = () => {
     // Track initial page view
     trackPageView();
 
-    // Setup heartbeat every 30 seconds
+    // Setup heartbeat every 12 hours (43200000 milliseconds)
     heartbeatIntervalRef.current = setInterval(() => {
       trackHeartbeat();
-    }, 30000);
+    }, 43200000);
 
     // Track session end on unmount/page unload
     const handleUnload = () => {

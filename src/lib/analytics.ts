@@ -1,5 +1,29 @@
 const ANALYTICS_API_URL = 'https://abc123xyz.execute-api.eu-west-2.amazonaws.com/track';
 
+// ON/OFF flag for analytics tracking
+export const ANALYTICS_ENABLED = true; // Set to false to disable tracking
+
+// Cache for IP and country info
+let ipCountryCache: { ip: string; country: string } | null = null;
+
+// Fetch IP and Country information
+const fetchIpCountry = async (): Promise<{ ip: string; country: string }> => {
+  if (ipCountryCache) return ipCountryCache;
+  
+  try {
+    const response = await fetch('https://ipapi.co/json/');
+    const data = await response.json();
+    ipCountryCache = {
+      ip: data.ip || 'unknown',
+      country: data.country_name || 'unknown',
+    };
+    return ipCountryCache;
+  } catch (error) {
+    console.log('Could not fetch IP/Country', error);
+    return { ip: 'unknown', country: 'unknown' };
+  }
+};
+
 // Generate or retrieve visitor ID from localStorage
 export const generateVisitorId = (): string => {
   try {
@@ -35,7 +59,15 @@ export const trackEvent = async (
   eventType: 'page_view' | 'session_start' | 'session_end' | 'heartbeat' | 'resume_download' | 'contact_submit',
   additionalData?: Record<string, any>
 ): Promise<void> => {
+  // Check if analytics is enabled
+  if (!ANALYTICS_ENABLED) {
+    console.log('Analytics disabled, skipping:', eventType);
+    return;
+  }
+
   try {
+    const { ip, country } = await fetchIpCountry();
+    
     const payload = {
       event_type: eventType,
       visitor_id: generateVisitorId(),
@@ -44,6 +76,8 @@ export const trackEvent = async (
       path: window.location.pathname + window.location.hash,
       referrer: document.referrer || '',
       user_agent: navigator.userAgent,
+      ip,
+      country,
       ...additionalData,
     };
 
