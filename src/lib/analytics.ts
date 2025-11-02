@@ -1,7 +1,7 @@
 const ANALYTICS_API_URL = "https://zztynrwa31.execute-api.eu-west-1.amazonaws.com/track";
 
 // ON/OFF flag for analytics tracking
-export const ANALYTICS_ENABLED = true; // Set to false to disable tracking
+export const ANALYTICS_ENABLED = false; // Set to false to disable tracking
 
 // Cache for IP and country info
 let ipCountryCache: { ip: string; country: string } | null = null;
