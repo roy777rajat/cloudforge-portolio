@@ -1,4 +1,4 @@
-const ANALYTICS_API_URL = 'https://abc123xyz.execute-api.eu-west-2.amazonaws.com/track';
+const ANALYTICS_API_URL = 'https://zztynrwa31.execute-api.eu-west-1.amazonaws.com';
 
 // ON/OFF flag for analytics tracking
 export const ANALYTICS_ENABLED = true; // Set to false to disable tracking
