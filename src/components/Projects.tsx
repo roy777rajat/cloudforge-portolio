@@ -74,6 +74,13 @@ const projects = [
     link: "https://www.linkedin.com/in/royrajat/",
     image: cloudMigrationImg,
   },
+  {
+    title: "RAG Unified Knowledge Chat with PDF and SQL Data using OpenAI",
+    description: "Similarity Evaluation with RAG.",
+    tech: ["Python", "OpenAI", "S3", "Dynamo DB", "PostgreSQL"],
+    link: "https://medium.com/@uk.rajatroy/similarity-evaluation-unified-knowledge-chat-with-pdf-and-sql-data-using-openai-a1693d9a5ca0",
+    image: cloudMigrationImg,
+  },
 ];
 
 export function Projects() {
@@ -101,8 +108,8 @@ export function Projects() {
             >
               {/* Project Image */}
               <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
@@ -113,19 +120,13 @@ export function Projects() {
                 <h3 className="text-xl font-heading font-bold mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                
-                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
-                  {project.description}
-                </p>
+
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">{project.description}</p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
-                    <Badge
-                      key={i}
-                      variant="secondary"
-                      className="bg-secondary/50 text-xs"
-                    >
+                    <Badge key={i} variant="secondary" className="bg-secondary/50 text-xs">
                       {tech}
                     </Badge>
                   ))}
