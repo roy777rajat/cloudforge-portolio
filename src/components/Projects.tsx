@@ -12,6 +12,14 @@ import ragKnowledgeChatImg from "@/assets/project-rag-knowledge-chat.jpg";
 
 const projects = [
   {
+    title: "Real-Time Motor Insurance Fraud Detection System",
+    description:
+      "Built an end-to-end real-time fraud detection system using Databricks Lakehouse architecture. Leverages Delta Live Tables, streaming data pipelines, and ML models to detect fraudulent motor insurance claims instantly, achieving high accuracy while maintaining low latency for production-grade insurance operations.",
+    tech: ["Databricks", "Delta Lake", "PySpark", "ML", "Real-time"],
+    link: "https://medium.com/@uk.rajatroy/real-time-motor-insurance-fraud-detection-system-using-databricks-lakehouse-55fac8952777",
+    image: dataLakeImg,
+  },
+  {
     title: "AI-Driven Defect Management & Incident Tracking",
     description:
       "Revolutionized defect tracking with conversational AI, enabling teams to manage incidents through WhatsApp, Teams, and Slack. Built intelligent state machine workflows using Anthropic's Claude, N8N automation, and real-time notifications via Twilio.",
@@ -26,14 +34,6 @@ const projects = [
     tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova", "Claude AI"],
     link: "https://medium.com/@uk.rajatroy/insurance-product-media-maker-agentic-ai-with-llms-multi-agent-orchestration-mcp-and-media-92840d27806c",
     image: mediaMakerImg,
-  },
-  {
-    title: "Enterprise Data Lake Modernization",
-    description:
-      "Architected scalable S3-based data lake infrastructure using AWS Glue and PySpark. Implemented comprehensive data validation frameworks and ETL pipelines, achieving 35% faster transaction processing and enabling near real-time payment analytics for insurance operations.",
-    tech: ["AWS S3", "Glue", "PySpark", "Athena", "Lambda"],
-    link: "https://www.linkedin.com/in/royrajat/",
-    image: dataLakeImg,
   },
   {
     title: "AI-Powered Claims Processing Automation",

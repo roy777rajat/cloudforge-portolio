@@ -50,7 +50,7 @@ export function Hero() {
           <div className="space-y-6 animate-fade-in text-center lg:text-left">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
               <span className="text-sm font-medium text-primary">
-                Associate Consultant - UK
+                Talk About Data & AI
               </span>
             </div>
             
@@ -66,7 +66,7 @@ export function Hero() {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Associate Consultant based in the UK, specializing in AWS cloud migrations, data engineering, and insurance data transformation. Designs scalable ETL pipelines with AWS Glue + PySpark and builds S3-based data lakes that streamline workflows.
+              Passionate about building intelligent data ecosystems on AWS Cloud. With over a decade of experience across Global IT Services, I specialize in designing real-time ETL pipelines, modernizing legacy systems, and integrating AI-driven automation to transform insurance operations at scale.
             </p>
 
             <div className="text-base text-muted-foreground/80 max-w-2xl italic">
