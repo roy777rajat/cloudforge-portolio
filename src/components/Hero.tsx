@@ -6,7 +6,7 @@ import { StatsCarousel } from "@/components/StatsCarousel";
 const roles = [
   "AWS Cloud Engineer",
   "Data Engineer",
-  "Insurance Tech Specialist",
+  "AI Solutions Specialist",
   "Solutions Architect",
 ];
 
