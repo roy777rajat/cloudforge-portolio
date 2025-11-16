@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Linkedin, Send, Github, Facebook } from "lucide-react";
+import { Mail, Linkedin, Send, Github, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 import { trackContactSubmit } from "@/lib/analytics";
@@ -97,27 +97,6 @@ export function Contact() {
                   >
                     roy777rajat@gmail.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent/10 rounded-lg">
-                  <Phone className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+91 8420331373</p>
-                  <p className="text-muted-foreground">+44 7776827123</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-muted-foreground">Peterborough, UK</p>
                 </div>
               </div>
 

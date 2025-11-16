@@ -17,12 +17,11 @@ export function About() {
           {/* Left: Bio */}
           <div className="space-y-6 animate-slide-up">
             <p className="text-lg leading-relaxed">
-              Rajat is an{" "}
+              With a career spanning{" "}
               <span className="font-semibold text-primary">
-                Associate Consultant based in the UK
-              </span>{" "}
-              with a passion for building data-driven ecosystems on AWS Cloud. From designing enterprise data lakes and
-              near-real-time pipelines to modernizing legacy insurance operations, Rajat believes that{" "}
+                over 10 years in Global IT Services
+              </span>
+              , Rajat has worked across multiple continents delivering data engineering solutions that matter. His passion lies in building data-driven ecosystems on AWS Cloud—from designing enterprise data lakes and near-real-time pipelines to modernizing legacy insurance operations. He believes that{" "}
               <span className="italic">data is meaningful only when it delivers measurable value</span>.
             </p>
             <p className="text-lg leading-relaxed">
