@@ -106,10 +106,6 @@ const recognitions = [
     icon: "🏆",
   },
   {
-    title: "Finalist - TCS AI Hackathon",
-    icon: "🤖",
-  },
-  {
     title: "Recognized - Redis AI Challenge",
     icon: "🏅",
   },

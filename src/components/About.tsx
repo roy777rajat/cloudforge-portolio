@@ -19,7 +19,7 @@ export function About() {
             <p className="text-lg leading-relaxed">
               Rajat is an{" "}
               <span className="font-semibold text-primary">
-                Associate Consultant at Tata Consultancy Services (Diligenta Ltd, UK)
+                Associate Consultant based in the UK
               </span>{" "}
               with a passion for building data-driven ecosystems on AWS Cloud. From designing enterprise data lakes and
               near-real-time pipelines to modernizing legacy insurance operations, Rajat believes that{" "}
