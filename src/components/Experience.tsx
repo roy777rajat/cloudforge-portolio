@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     title: "Associate Consultant",
-    company: "Diligenta Ltd (TCS UK)",
+    company: "Insurance Technology Firm",
     location: "United Kingdom",
     period: "2022 - Present",
     description:
@@ -22,7 +22,7 @@ const experiences = [
   },
   {
     title: "Associate Consultant",
-    company: "Tata Consultancy Services (India)",
+    company: "Global IT Services Company",
     location: "India",
     period: "2020 - 2022",
     description:
@@ -38,7 +38,7 @@ const experiences = [
   },
   {
     title: "Assistant Consultant",
-    company: "Tata Consultancy Services (South Africa)",
+    company: "Global IT Services Company",
     location: "South Africa",
     period: "2016 - 2020",
     description:
@@ -52,11 +52,11 @@ const experiences = [
   },
   {
     title: "IT Analyst",
-    company: "Tata Consultancy Services (UAE)",
+    company: "Global IT Services Company",
     location: "United Arab Emirates",
     period: "2014 - 2016",
     description:
-      "Application Developer and Production Support Analyst for TCS BaNCS insurance transformation projects across the Middle East.",
+      "Application Developer and Production Support Analyst for enterprise insurance transformation projects across the Middle East.",
     achievements: [
       "Integrated PAS systems with Oracle Financials to enable real-time financial reconciliation and reporting.",
       "Developed Customer 360 analytics dashboards enhancing customer visibility across claims and policy lifecycles.",
@@ -67,11 +67,11 @@ const experiences = [
   },
   {
     title: "System Engineer",
-    company: "Tata Consultancy Services (India)",
+    company: "Global IT Services Company",
     location: "India",
     period: "2010 - 2014",
     description:
-      "Core developer in TCS BaNCS Insurance and enterprise system integration projects with a focus on backend and API development.",
+      "Core developer in enterprise insurance and system integration projects with a focus on backend and API development.",
     achievements: [
       "Developed and integrated high-performance REST APIs enabling cross-platform data exchange and interoperability.",
       "Engineered relational database solutions using Core Java, Spring, JDBC, and Oracle PL/SQL ensuring optimized query performance.",
