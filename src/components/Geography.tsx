@@ -1,33 +1,38 @@
+import { useEffect, useState } from "react";
 import { Globe, MapPin } from "lucide-react";
 
 const regions = [
   {
     country: "India",
     flag: "🇮🇳",
-    years: "2007-2014, 2020-2022",
-    role: "System Engineer to Associate Consultant",
   },
   {
     country: "UAE",
     flag: "🇦🇪",
-    years: "2014-2016",
-    role: "IT Analyst",
   },
   {
     country: "South Africa",
     flag: "🇿🇦",
-    years: "2016-2020",
-    role: "Assistant Consultant",
   },
   {
     country: "United Kingdom",
     flag: "🇬🇧",
-    years: "2022-Present",
-    role: "Associate Consultant",
   },
 ];
 
 export function Geography() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % regions.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
   return (
     <section id="geography" className="py-20">
       <div className="container mx-auto px-6">
@@ -43,13 +48,20 @@ export function Geography() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div 
+          className="max-w-5xl mx-auto"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           <div className="grid md:grid-cols-2 gap-6">
-            {regions.map((region, index) => (
+            {regions
+              .slice(currentIndex, currentIndex + 2)
+              .concat(regions.slice(0, Math.max(0, currentIndex + 2 - regions.length)))
+              .map((region, idx) => (
               <div
-                key={index}
-                className="group bg-gradient-to-br from-card to-card/80 rounded-xl p-6 border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                key={`${region.country}-${idx}`}
+                className="group bg-gradient-to-br from-card to-card/80 rounded-xl p-6 border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
                   <div className="text-5xl">{region.flag}</div>
@@ -60,12 +72,6 @@ export function Geography() {
                         {region.country}
                       </h3>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      {region.years}
-                    </p>
-                    <p className="text-sm text-foreground/80 font-medium">
-                      {region.role}
-                    </p>
                   </div>
                 </div>
               </div>
