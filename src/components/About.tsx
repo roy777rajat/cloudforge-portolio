@@ -1,4 +1,4 @@
-import { Award, Briefcase, MapPin } from "lucide-react";
+import { Award, Briefcase } from "lucide-react";
 
 export function About() {
   return (
@@ -38,11 +38,6 @@ export function About() {
               , Rajat empowers teams to adopt cloud-native, high-performance architectures that drive digital
               transformation across the insurance industry.
             </p>
-
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin className="h-5 w-5 text-primary" />
-              <span>Peterborough, UK</span>
-            </div>
           </div>
 
           {/* Right: Highlights */}

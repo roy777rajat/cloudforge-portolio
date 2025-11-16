@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download } from "lucide-react";
-import { trackResumeDownload } from "@/lib/analytics";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -55,17 +54,6 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="/Rajat_Roy_Resume.pdf"
-              download="Rajat_Roy_Resume.pdf"
-              className="flex items-center gap-2"
-              onClick={() => trackResumeDownload()}
-            >
-              <Button variant="default" size="sm" className="gap-2">
-                <Download className="h-4 w-4" />
-                Resume
-              </Button>
-            </a>
             <ThemeToggle />
           </div>
 
@@ -100,19 +88,6 @@ export function Navigation() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="/Rajat_Roy_Resume.pdf"
-                download="Rajat_Roy_Resume.pdf"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  trackResumeDownload();
-                }}
-              >
-                <Button variant="default" size="sm" className="w-full gap-2">
-                  <Download className="h-4 w-4" />
-                  Download Resume
-                </Button>
-              </a>
             </div>
           </div>
         )}
