@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Cloud, Database, Brain, Network, Activity, Code } from "lucide-react";
 
 const services = [
@@ -46,6 +47,19 @@ const services = [
 ];
 
 export function Services() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % services.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
   return (
     <section id="services" className="py-20">
       <div className="container mx-auto px-6">
@@ -58,12 +72,19 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {services.map((service, index) => (
+        <div 
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {services
+            .slice(currentIndex, currentIndex + 3)
+            .concat(services.slice(0, Math.max(0, currentIndex + 3 - services.length)))
+            .map((service, idx) => (
             <div
-              key={index}
-              className="group bg-card rounded-xl p-6 border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              key={`${service.title}-${idx}`}
+              className="group bg-card rounded-xl p-6 border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
+              style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <div className="mb-4 inline-block p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl group-hover:scale-110 transition-transform">
                 <service.icon className="h-8 w-8 text-primary" />
