@@ -19,7 +19,7 @@ export function About() {
             <p className="text-lg leading-relaxed">
               With a career spanning{" "}
               <span className="font-semibold text-primary">
-                over 10 years in Global IT Services
+                over one and half decade in Global IT Services
               </span>
               , I have worked across multiple continents delivering data engineering solutions that matter. My passion lies in building data-driven ecosystems on AWS Cloud—from designing enterprise data lakes and near-real-time pipelines to modernizing legacy insurance operations. I believe that{" "}
               <span className="italic">data is meaningful only when it delivers measurable value</span>.
