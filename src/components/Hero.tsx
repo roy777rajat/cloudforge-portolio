@@ -4,10 +4,12 @@ import { ArrowDown, Linkedin, Mail, Facebook, Github } from "lucide-react";
 import { StatsCarousel } from "@/components/StatsCarousel";
 
 const roles = [
-  "AWS Cloud Engineer",
-  "Data Engineer",
-  "AI Solutions Specialist",
-  "Solutions Architect",
+  "Building AI on Cloud Data",
+  "Streaming Data with AI Insights",
+  "Cloud-Powered Data Intelligence",
+  "AI-Driven AWS Solutions",
+  "Architecting Data Lakes & AI",
+  "Real-Time Data + AI Automation",
 ];
 
 export function Hero() {
