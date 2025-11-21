@@ -6,8 +6,10 @@ import { StatsCarousel } from "@/components/StatsCarousel";
 const roles = [
   "Data + AI Engineer",
   "Cloud + Data Architect",
+  "Production Support Lead",
+  "Cross-Functional Collaborator",
+  "Data Governance Advocate",
   "AI + Data Solutions",
-  "Data + Cloud + AI",
 ];
 
 export function Hero() {
@@ -71,6 +73,13 @@ export function Hero() {
 
             <div className="text-base text-muted-foreground/80 max-w-2xl italic">
               "Transforming insurance operations with Data + AI: from claims automation to policy insights, building secure and scalable solutions."
+            </div>
+
+            {/* Confident Quote Section */}
+            <div className="mt-6 p-6 bg-primary/5 border-l-4 border-primary rounded-r-lg">
+              <p className="text-base md:text-lg text-foreground font-medium leading-relaxed">
+                💡 <span className="font-bold text-primary">My Approach:</span> When customers face delays in claims processing or struggle with data silos across policy systems, I don't just build pipelines—I architect intelligent solutions. With Data + AI, I transform messy legacy data into real-time insights, automate underwriting decisions, and ensure governance at every layer. The result? Faster claims, accurate risk assessment, and confident business decisions backed by trusted data.
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
