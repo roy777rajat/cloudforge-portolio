@@ -75,7 +75,7 @@ export function Hero() {
             {/* Confident Quote Section */}
             <div className="mt-6 p-6 bg-primary/5 border-l-4 border-primary rounded-r-lg">
               <p className="text-base md:text-lg text-foreground font-medium leading-relaxed">
-                💡 <span className="font-bold text-primary">My Approach:</span> When customers face delays in claims processing or struggle with data silos across policy systems, I don't just build pipelines—I architect intelligent solutions. With Data + AI, I transform messy legacy data into real-time insights, automate underwriting decisions, and ensure governance at every layer. The result? Faster claims, accurate risk assessment, and confident business decisions backed by trusted data.
+                💡 <span className="font-bold text-primary">My Approach:</span> With over a decade of experience across various insurance transformations, I architect Data + AI solutions that turn legacy silos into real-time insights. From automating claims to ensuring governance, I work smart—not just hard—delivering faster results with trusted data.
               </p>
             </div>
 
