@@ -4,12 +4,10 @@ import { ArrowDown, Linkedin, Mail, Facebook, Github } from "lucide-react";
 import { StatsCarousel } from "@/components/StatsCarousel";
 
 const roles = [
-  "Building AI on Cloud Data",
-  "Streaming Data with AI Insights",
-  "Cloud-Powered Data Intelligence",
-  "AI-Driven AWS Solutions",
-  "Architecting Data Lakes & AI",
-  "Real-Time Data + AI Automation",
+  "Data + AI Engineer",
+  "Cloud + Data Architect",
+  "AI + Data Solutions",
+  "Data + Cloud + AI",
 ];
 
 export function Hero() {
@@ -68,11 +66,11 @@ export function Hero() {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Passionate about building intelligent data ecosystems on AWS Cloud. With over a decade of experience across Global IT Services, I specialize in designing real-time ETL pipelines, modernizing legacy systems, and integrating AI-driven automation to transform insurance operations at scale.
+              Passionate about building intelligent data ecosystems on AWS Cloud. Seen and been part of various Insurance Digital Transformation initiatives across Claims Processing, Policy Administration, Underwriting, and Billing systems—delivering real-time ETL pipelines, AI-driven automation, and modernized data architectures at scale.
             </p>
 
             <div className="text-base text-muted-foreground/80 max-w-2xl italic">
-              "I design data lakes, real-time pipelines, and AI-assisted workflows that modernize insurance operations—secure, scalable, and observable."
+              "Transforming insurance operations with Data + AI: from claims automation to policy insights, building secure and scalable solutions."
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
