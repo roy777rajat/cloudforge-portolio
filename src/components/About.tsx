@@ -26,9 +26,7 @@ export function About() {
             </p>
             <p className="text-lg leading-relaxed">
               My journey from developer to cloud data engineer has been marked by continuous learning, hands-on
-              innovation, and an eagerness to integrate AI into traditional insurance workflows. I design scalable ETL
-              pipelines using AWS Glue and Apache PySpark, implement AI-driven automation with AWS Bedrock, and build
-              API frameworks aligned with strategic business goals.
+              innovation, and an eagerness to integrate AI into traditional insurance workflows. I architect end-to-end data solutions that blend cloud infrastructure with AI-driven intelligence, ensuring every design decision aligns with business outcomes and operational excellence.
             </p>
             <p className="text-lg leading-relaxed">
               Backed by{" "}
