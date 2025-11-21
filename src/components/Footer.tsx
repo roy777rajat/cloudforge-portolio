@@ -64,7 +64,7 @@ export function Footer() {
             © {new Date().getFullYear()} Rajat Roy. All rights reserved.
           </p>
           <p className="text-secondary-foreground/50 text-xs mt-2">
-            Last updated: November 1, 2025
+            Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
         </div>
       </div>
