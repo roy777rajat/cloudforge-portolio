@@ -21,13 +21,13 @@ export function About() {
               <span className="font-semibold text-primary">
                 over 10 years in Global IT Services
               </span>
-              , Rajat has worked across multiple continents delivering data engineering solutions that matter. His passion lies in building data-driven ecosystems on AWS Cloud—from designing enterprise data lakes and near-real-time pipelines to modernizing legacy insurance operations. He believes that{" "}
+              , I have worked across multiple continents delivering data engineering solutions that matter. My passion lies in building data-driven ecosystems on AWS Cloud—from designing enterprise data lakes and near-real-time pipelines to modernizing legacy insurance operations. I believe that{" "}
               <span className="italic">data is meaningful only when it delivers measurable value</span>.
             </p>
             <p className="text-lg leading-relaxed">
-              His journey from developer to cloud data engineer has been marked by continuous learning, hands-on
-              innovation, and an eagerness to integrate AI into traditional insurance workflows. He designs scalable ETL
-              pipelines using AWS Glue and Apache PySpark, implements AI-driven automation with AWS Bedrock, and builds
+              My journey from developer to cloud data engineer has been marked by continuous learning, hands-on
+              innovation, and an eagerness to integrate AI into traditional insurance workflows. I design scalable ETL
+              pipelines using AWS Glue and Apache PySpark, implement AI-driven automation with AWS Bedrock, and build
               API frameworks aligned with strategic business goals.
             </p>
             <p className="text-lg leading-relaxed">
@@ -35,7 +35,7 @@ export function About() {
               <span className="font-semibold text-accent">
                 12+ professional certifications including AWS Solutions Architect and Databricks Data Engineering
               </span>
-              , Rajat empowers teams to adopt cloud-native, high-performance architectures that drive digital
+              , I empower teams to adopt cloud-native, high-performance architectures that drive digital
               transformation across the insurance industry.
             </p>
           </div>
