@@ -4,9 +4,7 @@ import { ArrowDown, Linkedin, Mail, Facebook, Github } from "lucide-react";
 import { StatsCarousel } from "@/components/StatsCarousel";
 
 const roles = [
-  "Data + AI Engineer",
-  "Data + AI Solutions",
-  "Data + AI Architect",
+  "Data + AI",
 ];
 
 export function Hero() {
