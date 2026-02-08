@@ -9,6 +9,10 @@ import vehicleTrackingImg from "@/assets/project-vehicle-new.jpg";
 import monitoringImg from "@/assets/project-monitoring-new.jpg";
 import cloudMigrationImg from "@/assets/project-cloud-migration-new.jpg";
 import ragKnowledgeChatImg from "@/assets/project-rag-knowledge-chat.jpg";
+import mcpAiAgentImg from "@/assets/project-mcp-ai-agent.jpg";
+import kappaArchitectureImg from "@/assets/project-kappa-architecture.jpg";
+import cdcDebeziumImg from "@/assets/project-cdc-debezium.jpg";
+import insurancePipelineImg from "@/assets/project-insurance-pipeline.jpg";
 
 const projects = [
   {
@@ -34,6 +38,38 @@ const projects = [
     tech: ["Python", "AWS Bedrock", "AWS Strands", "Agent Core", "Nova", "Claude AI"],
     link: "https://medium.com/@uk.rajatroy/insurance-product-media-maker-agentic-ai-with-llms-multi-agent-orchestration-mcp-and-media-92840d27806c",
     image: mediaMakerImg,
+  },
+  {
+    title: "MCP-Powered Autonomous AI Agent",
+    description:
+      "Built an end-to-end autonomous AI agent leveraging MCP (Model Context Protocol) to orchestrate Git operations, cloud deployments on Render, and intelligent task execution via Microsoft Copilot Studio. Demonstrates how MCP enables seamless tool integration for fully autonomous developer workflows.",
+    tech: ["MCP", "Copilot Studio", "Git", "Render", "AI Agent"],
+    link: "https://medium.com/@uk.rajatroy/building-an-mcp-powered-autonomous-ai-agent-with-git-render-and-microsoft-copilot-studio-1b9c74d5cfb8",
+    image: mcpAiAgentImg,
+  },
+  {
+    title: "Kappa Architecture: Kafka, PySpark & Delta Lake",
+    description:
+      "Implemented a Kappa Architecture with multiple local sinks, streaming real-time data through Kafka into PySpark for processing, then persisting into both PostgreSQL and Delta Lake simultaneously. Showcases unified stream processing eliminating the need for separate batch layers.",
+    tech: ["Kafka", "PySpark", "PostgreSQL", "Delta Lake", "Streaming"],
+    link: "https://medium.com/@uk.rajatroy/kappa-architecture-multiple-sink-kafka-pyspark-postgres-and-delta-lake-44cefd33350e",
+    image: kappaArchitectureImg,
+  },
+  {
+    title: "True Streaming: CDC with Debezium",
+    description:
+      "Designed a true streaming Change Data Capture pipeline using Debezium to capture real-time database changes at the log level. Streams row-level inserts, updates, and deletes through Kafka topics, enabling event-driven architectures with zero data loss and minimal latency.",
+    tech: ["Debezium", "Kafka", "CDC", "PostgreSQL", "Docker"],
+    link: "https://medium.com/@uk.rajatroy/true-streaming-building-change-data-capture-with-debezium-9466f30021e7",
+    image: cdcDebeziumImg,
+  },
+  {
+    title: "Cost-Effective Insurance Data Pipeline",
+    description:
+      "Architected a modern, cost-optimized data pipeline for insurance analytics using AWS DMS for real-time database migration and Databricks for scalable processing. Replaces expensive legacy ETL with a streamlined cloud-native approach, reducing infrastructure costs while improving data freshness.",
+    tech: ["AWS DMS", "Databricks", "Delta Lake", "Insurance", "Analytics"],
+    link: "https://medium.com/@uk.rajatroy/cost-effective-modern-data-pipeline-for-insurance-analytics-using-aws-dms-and-databricks-df180f129d7b",
+    image: insurancePipelineImg,
   },
   {
     title: "AI-Powered Claims Processing Automation",
