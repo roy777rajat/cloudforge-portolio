@@ -84,7 +84,11 @@ const projects = [
   {
     title: "Personal Finance Dashboard on Databricks",
     description:
-      "Engineered a production-grade personal finance dashboard fully on Databricks — ingesting bank transaction emails through an ETL pipeline into Unity Catalog, syncing to Lakebase (managed Postgres), and surfacing insights via a polished Streamlit app deployed as a Databricks App. Showcases the modern Lakehouse + Lakebase pattern.
+      "Engineered a production-grade personal finance dashboard fully on Databricks — ingesting bank transaction emails through an ETL pipeline into Unity Catalog, syncing to Lakebase (managed Postgres), and surfacing insights via a polished Streamlit app deployed as a Databricks App. Showcases the modern Lakehouse + Lakebase pattern.",
+    tech: ["Databricks", "Lakebase", "Streamlit", "Unity Catalog", "Delta Lake", "Python"],
+    link: "https://github.com/roy777rajat/databricks-finance-dashboard",
+    image: financeDashboardImg,
+  },
   {
     title: "AI-Powered Claims Processing Automation",
     description:
