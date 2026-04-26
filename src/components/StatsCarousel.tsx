@@ -4,7 +4,7 @@ const stats = [
   { value: "10+", label: "Years of Experience" },
   { value: "4+", label: "Countries" },
   { value: "7+", label: "Insurance LOBs" },
-  { value: "6+", label: "Featured Projects" },
+  { value: "15+", label: "Featured Projects" },
   { value: "11+", label: "AWS Cloud Skills" },
   { value: "5+", label: "Data Engineering Skills" },
   { value: "4+", label: "Streaming Stack" },
