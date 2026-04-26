@@ -7,7 +7,7 @@ import {
 } from '@/lib/analytics';
 
 export const useAnalytics = () => {
-  const heartbeatIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hasTrackedSession = useRef(false);
 
   useEffect(() => {
