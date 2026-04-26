@@ -13,6 +13,8 @@ import mcpAiAgentImg from "@/assets/project-mcp-ai-agent.jpg";
 import kappaArchitectureImg from "@/assets/project-kappa-architecture.jpg";
 import cdcDebeziumImg from "@/assets/project-cdc-debezium.jpg";
 import insurancePipelineImg from "@/assets/project-insurance-pipeline.jpg";
+import familyVaultImg from "@/assets/project-familyvault-ai.jpg";
+import financeDashboardImg from "@/assets/project-finance-dashboard.jpg";
 
 const projects = [
   {
@@ -71,6 +73,18 @@ const projects = [
     link: "https://medium.com/@uk.rajatroy/cost-effective-modern-data-pipeline-for-insurance-analytics-using-aws-dms-and-databricks-df180f129d7b",
     image: insurancePipelineImg,
   },
+  {
+    title: "FamilyVault AI - Secure Document Intelligence",
+    description:
+      "Built an AWS-powered personal document intelligence platform that lets families securely store, search, chat with, and share documents using AI. Leverages Amazon Bedrock for RAG-based Q&A, Cognito for auth, S3 vector stores, Lambda, DynamoDB, and CloudFront — delivering enterprise-grade security for personal data.",
+    tech: ["AWS Bedrock", "Cognito", "Lambda", "DynamoDB", "S3 Vectors", "RAG"],
+    link: "https://github.com/roy777rajat/familyvault-ai",
+    image: familyVaultImg,
+  },
+  {
+    title: "Personal Finance Dashboard on Databricks",
+    description:
+      "Engineered a production-grade personal finance dashboard fully on Databricks — ingesting bank transaction emails through an ETL pipeline into Unity Catalog, syncing to Lakebase (managed Postgres), and surfacing insights via a polished Streamlit app deployed as a Databricks App. Showcases the modern Lakehouse + Lakebase pattern.
   {
     title: "AI-Powered Claims Processing Automation",
     description:
